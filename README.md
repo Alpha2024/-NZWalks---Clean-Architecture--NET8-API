@@ -1,5 +1,7 @@
 # NZWalks
+
 A Clean Architecture .NET 8 Web API for managing regional walks and trails, built with EF Core, JWT auth, AutoMapper, and Serilog
+
 # 🌍 NZWalks - Clean Architecture .NET 8 API
 
 **NZWalks** is a sample ASP.NET Core Web API application designed using Clean Architecture principles. It demonstrates modern backend practices, including layered separation, AutoMapper, JWT authentication, Serilog logging, and Swagger integration.
@@ -20,6 +22,7 @@ A Clean Architecture .NET 8 Web API for managing regional walks and trails, buil
 ---
 
 ## 🏗️ Project Structure
+
 NZWalks/
 │
 ├── NZWalks.API/ --> Presentation Layer (Controllers, Filters, Services, Middleware)
@@ -62,7 +65,9 @@ NZWalks/
 ### Setup Instructions
 
 1. **Clone the repository:**
+
 ```bash
+##https://github.com/Alpha2024/NZWalks.git
 
 ###🔐 Authentication
 ### This API uses JWT Bearer Tokens. Use /api/login or your custom authentication route to generate a token, then add it to Swagger under Authorize.
@@ -82,3 +87,4 @@ Alpha Unisa Sesay
   Software Developer @ GTBank Sierra Leone
 📧 unisa7590@gmail.com
 🔗 GitHub: github.com/Alpha2024
+```
