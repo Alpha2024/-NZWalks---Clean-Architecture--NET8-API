@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36301.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NZWalks.API", "NZWalks.API\NZWalks.API.csproj", "{62109147-CEEC-414A-BFA6-91BB314F7F88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NZwalks.Core", "NZwalks.Core\NZwalks.Core.csproj", "{3D681AEF-BF35-4AAE-8F43-4A8C3CC27A40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NZwalks.Infrasture", "NZwalks.Infrasture\NZwalks.Infrasture.csproj", "{8125BE98-DB00-4C34-928D-2F344A6C22AE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scr", "scr", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{41D1C9AC-9918-4152-8447-AA4042106E17}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{62109147-CEEC-414A-BFA6-91BB314F7F88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62109147-CEEC-414A-BFA6-91BB314F7F88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62109147-CEEC-414A-BFA6-91BB314F7F88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62109147-CEEC-414A-BFA6-91BB314F7F88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D681AEF-BF35-4AAE-8F43-4A8C3CC27A40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D681AEF-BF35-4AAE-8F43-4A8C3CC27A40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D681AEF-BF35-4AAE-8F43-4A8C3CC27A40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D681AEF-BF35-4AAE-8F43-4A8C3CC27A40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8125BE98-DB00-4C34-928D-2F344A6C22AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8125BE98-DB00-4C34-928D-2F344A6C22AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8125BE98-DB00-4C34-928D-2F344A6C22AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8125BE98-DB00-4C34-928D-2F344A6C22AE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{62109147-CEEC-414A-BFA6-91BB314F7F88} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{3D681AEF-BF35-4AAE-8F43-4A8C3CC27A40} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{8125BE98-DB00-4C34-928D-2F344A6C22AE} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D3244AFF-40DD-4D8B-98EA-85D48F5981BD}
+	EndGlobalSection
+EndGlobal
