@@ -84,7 +84,7 @@ Docker support
 
 📬 Contact
 Alpha Unisa Sesay
-  Software Developer @ Guaranty Truest Bank-Sierra Leone
+  Software Developer @ Guaranty Trust Bank-Sierra Leone
 📧 unisa7590@gmail.com
 🔗 GitHub: github.com/Alpha2024
 ```
