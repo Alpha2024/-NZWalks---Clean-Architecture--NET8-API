@@ -1,5 +1,4 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.FileProviders;
@@ -8,6 +7,7 @@ using Microsoft.OpenApi.Models;
 using NZwalks.Infrasture.ApplicationContext;
 using NZWalks.API.Extensions;
 using NZWalks.API.MappingProfiles;
+using NZWalks.API.Middlewares;
 using Serilog;
 using System.Text;
 

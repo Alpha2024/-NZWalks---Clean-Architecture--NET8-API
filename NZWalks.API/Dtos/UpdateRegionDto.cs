@@ -5,11 +5,11 @@ namespace NZWalks.API.Dtos
     public class UpdateRegionDto
     {
         [Required]
-        [MinLength(3, ErrorMessage = "Code has be a minimum of 3 charracters")]
-        [MaxLength(3, ErrorMessage = "Code has be a maximum of 3 charracters")]
+        [MinLength(3, ErrorMessage = "Name has be a minimum of 3 charracters")]
+        [MaxLength(100, ErrorMessage = "Name has be a maximum of 100 charracters")]
         public string Name { get; set; }
         [Required]
-        [MaxLength(100, ErrorMessage = "Name has be a maximum of 100 charracters")]
+        [MaxLength(3, ErrorMessage = "Code has be a maximum of 3 charracters")]
         public string Code { get; set; }
         public string? RegionImageUrl { get; set; }
     }

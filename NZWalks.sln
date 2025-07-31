@@ -13,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scr", "scr", "{02EA681E-C7D
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{41D1C9AC-9918-4152-8447-AA4042106E17}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NZWalks.Web", "NZWalks.Web\NZWalks.Web.csproj", "{FED738B4-0A4A-4568-8476-6C26092D0B17}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,10 @@ Global
 		{8125BE98-DB00-4C34-928D-2F344A6C22AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8125BE98-DB00-4C34-928D-2F344A6C22AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8125BE98-DB00-4C34-928D-2F344A6C22AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FED738B4-0A4A-4568-8476-6C26092D0B17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FED738B4-0A4A-4568-8476-6C26092D0B17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FED738B4-0A4A-4568-8476-6C26092D0B17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FED738B4-0A4A-4568-8476-6C26092D0B17}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -2,7 +2,7 @@
 
 using Microsoft.AspNetCore.Mvc;
 using NZwalks.Core.Domain.Entities;
-using NZWalks.API.CustomeActionFilters;
+using NZWalks.API.CustomActionFilters;
 using NZWalks.API.Dtos;
 using NZWalks.API.ServiceContracts;
 

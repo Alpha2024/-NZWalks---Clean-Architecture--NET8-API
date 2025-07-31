@@ -1,8 +1,8 @@
 ﻿
 using AutoMapper;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using NZwalks.Core.Domain.Entities;
+using NZWalks.API.CustomActionFilters;
 using NZWalks.API.Dtos;
 using NZWalks.API.ServiceContracts;
 using System.Text.Json;
@@ -56,7 +56,8 @@ namespace NZWalks.API.Controllers
 
 
         [HttpPost("EnterRegion")]
-        [Authorize(Roles = "Writer")]
+        [ValidateModel]
+        //  [Authorize(Roles = "Writer")]
         public async Task<IActionResult> AddRegion([FromBody] AddRegionDto addRegionDto)
         {
             if (ModelState.IsValid)
@@ -76,7 +77,7 @@ namespace NZWalks.API.Controllers
         }
 
         [HttpGet("region/{regionid:Guid}")]
-        [Authorize(Roles = "Reader,Writer")]
+        // [Authorize(Roles = "Reader,Writer")]
         public async Task<IActionResult> GetRegionById([FromRoute] Guid regionid)
         {
 
@@ -95,14 +96,14 @@ namespace NZWalks.API.Controllers
         }
 
         [HttpPut]
-        [Authorize(Roles = "Writer")]
-        [Route("updateRegion/{regionid:Guid}")]
-        public async Task<IActionResult> UpdateRegion([FromRoute] Guid regionid, [FromBody] UpdateRegionDto updateRegionDto)
+        // [Authorize(Roles = "Writer")]
+        [Route("updateRegion/{id:Guid}")]
+        public async Task<IActionResult> UpdateRegion([FromRoute] Guid id, [FromBody] UpdateRegionDto updateRegionDto)
         {
             if (ModelState.IsValid)
             {
 
-                var region = await _Contact.GetRegionById(regionid);
+                var region = await _Contact.GetRegionById(id);
                 if (region == null)
                 {
                     return NotFound();
@@ -128,7 +129,7 @@ namespace NZWalks.API.Controllers
         }
 
         [HttpDelete("Delete_Region/{regionid:Guid}")]
-        [Authorize(Roles = "Writer")]
+        // [Authorize(Roles = "Writer")]
         public async Task<IActionResult> RevomeRegion(Guid regionid)
         {
             var regiond = await _Contact.DeleteRegion(regionid);

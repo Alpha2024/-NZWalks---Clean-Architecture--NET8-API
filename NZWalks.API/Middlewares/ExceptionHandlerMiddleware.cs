@@ -13,7 +13,7 @@ namespace NZWalks.API.Middlewares
             _requestDelegate = next;
         }
 
-        public async Task Invokeasync(HttpContext httpContext)
+        public async Task InvokeAsync(HttpContext httpContext)
         {
             try
             {
@@ -32,7 +32,7 @@ namespace NZWalks.API.Middlewares
                 var error = new
                 {
                     Id = errorId,
-                    ErrorMessahe = "something went wrong! we are looking into resoving this"
+                    ErrorMessage = "something went wrong! we are looking into resoving this"
                 };
                 await httpContext.Response.WriteAsJsonAsync(error);
             }

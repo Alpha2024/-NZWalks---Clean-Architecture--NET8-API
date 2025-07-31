@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using NZWalks.API.CustomeActionFilters;
+using NZWalks.API.CustomActionFilters;
 using NZWalks.API.Dtos.usersDto;
 using NZWalks.API.ServiceContracts;
 
@@ -41,7 +41,7 @@ namespace NZWalks.API.Controllers
                     }
                 }
             }
-            return BadRequest("Something went wrong");
+            return BadRequest($"Something went wrong{identityresult}");
         }
 
 
